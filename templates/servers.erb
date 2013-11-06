@@ -1,0 +1,10 @@
+###
+### managed by puppet
+###
+<%- if @servers.is_a?(Array) -%>
+  <%- @servers.each do |srv| -%>
+<%= srv %>
+  <%- end -%>
+<%- end -%>
+
+  
