@@ -2,7 +2,7 @@
 class networker::install::client inherits networker {
 
   package { 'networker-client':
-    ensure => $package_ensure,
+    ensure => $package_client_version,
     name   => $package_networker_client,
   }
 
