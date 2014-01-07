@@ -1,11 +1,12 @@
 #
 class networker::params {
 
-  $package_ensure   = 'present'
-  $servers_template = 'networker/servers.erb'
-  $service_enable   = true
-  $service_ensure   = 'running'
-  $service_manage   = true
+  $package_ensure         = 'present'
+  $package_client_version = '8'
+  $servers_template       = 'networker/servers.erb'
+  $service_enable         = true
+  $service_ensure         = 'running'
+  $service_manage         = true
 
   $ld_file_source   = '/etc/ld.so.conf.d/nsr.conf'
   $install_nmda     = false
